@@ -1,2 +1,3 @@
 # project
-Learning AngularJS
+Learning git workflow
+-- Added develop branch

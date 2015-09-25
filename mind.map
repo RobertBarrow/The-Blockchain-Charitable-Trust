@@ -1,5 +1,27 @@
 {
-  "title": "This map was removed by its author",
+  "title": "master",
   "formatVersion": 2,
-  "id": 1
+  "id": 1,
+  "ideas": {
+    "1": {
+      "title": "develop",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "sprint01",
+          "id": 3,
+          "ideas": {
+            "1": {
+              "title": "feature-ABC123",
+              "id": 4
+            },
+            "2": {
+              "title": "feature-BCD234",
+              "id": 5
+            }
+          }
+        }
+      }
+    }
+  }
 }

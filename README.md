@@ -1,2 +1,2 @@
 # project
-Learning AngularJS
+Learning git workflow

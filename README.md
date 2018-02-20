@@ -1,2 +1,4 @@
-# project
-Learning git workflow
+# The Blockchain Charitable Trust project
+
+by Robert Barrow
+

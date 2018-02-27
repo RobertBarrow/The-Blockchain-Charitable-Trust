@@ -8,6 +8,6 @@
 * Public perception
 * Winning back the trust
 * Virtual Currencies
-* [The Blockchain](the-blockchain.md)
+* [The blockchain](the-blockchain.md)
 * Proof of concept
 

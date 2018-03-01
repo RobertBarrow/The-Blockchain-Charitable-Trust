@@ -1,6 +1,5 @@
-# Summary
+# Research
 
-* [Introduction](README.md)
 * National Lottery
 * Television habits
 * Live audience

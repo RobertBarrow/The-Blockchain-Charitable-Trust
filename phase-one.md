@@ -83,15 +83,9 @@ Smart Contracts would use BUIs to:
 
 #### Associated Smart Contracts
 
-##### [Register Sovereign](smart-contracts/register-sovereign.md) (*name*)
+* [Register Sovereign](smart-contracts/register-sovereign.md)
 
-Must supply
-  
-* a unique name for this Sovereign entity
-  
-Notes
-  
-1. this registration must be approved by The Blockchain Charitable Trust
+
 
 ##### De-register Sovereign (*BUI*)
 

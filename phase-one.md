@@ -3,10 +3,12 @@
 ### Create "Blockchain Charitable Trustcoin" (virtual currency) and a suite of "Smart Contracts" 
 _Note: initially these will be used exclusively by governments for charitable causes, such as international humanitarian aid_
 
-#### Blockchain Charitable Trustcoin ("BTC")
+Requirements
 
-* BTC would be a virtual currency on decentralised public ledger, meaning that no sovereign entity has overall control (i.e. no GCB)
-* Non-fungible nature of a BTCs would give an unprecidented transparency to the use of charitable donations and international aid
+#### Blockchain Charitable Trustcoin ("BCT") - a new virtual currency
+
+* BCT would be a virtual currency on decentralised public ledger, meaning that no sovereign entity has overall control (i.e. no GCB)
+* Non-fungible nature of a BCTs would give an unprecidented transparency to the use of charitable donations and international aid
 * LXRs could be controlled by each GCB and reviewed periodically; this would be akin to them setting their GSC's base interest rate
 * GCBs could lower the LXR to encourage charitable donations to be made in their territories 
 * GCBs could raise the LXR to encourage foreign aid to be sent to their territories
@@ -18,32 +20,65 @@ _Note: initially these will be used exclusively by governments for charitable ca
 
 Functionality required
 
-* must be able to Register and De-register as a Sovereign Entity 
-* must be able to Open and Close Accounts, Funds and Ports
-* must be able to Request Trustcoins (into a single, specified Fund) - to be fullfilled by another party
+* must be able to Register and De-register as a Sovereign Entity
+* must be able to Request Currencies be Opened and Closed (GSCs)
+* must be able to Request Accounts be Opened and Closed 
+* must be able to Open and Close Funds and Ports
+* must be able to Request Trustcoins (into a single, specified Fund) - to be fullfilled by a Central Bank, or other participant)
 * must be able to Deposit and Withdraw Trustcoins from Funds and Containers, respectively)
 * must be able to Deposit and Withdraw Trustcoins and Assets (from Funds and Containers, respectively)
 * must be able to Transfer Trustcoins between Funds (source must belong to own account, but destination can be any account)
 
 Associated Smart Contracts
 
-* Register as a Sovereign Entity
-* De-register as a Sovereign Entity (must not hold any BTC or Assets)
+* Register as a Sovereign Entity - _also sets the initial GSC_
+* De-register as a Sovereign Entity (must not hold any "BCT" or other digital Assets)
+
+* Request Currency (new GSC) - _to be fullfilled by a Central Bank_
+* Request Currency Retirement (old GSC) - _to be fullfilled by a Central Bank_
+
+* Request an Account (be opened) - _to be fullfilled by a Central Bank_
+* Request Account Closure (Account must be empty)
+
+* Open Fund (within to a single [owned] Account)
+* Close Fund (must be "empty")
+
+* Transfer Trustcoins (from one Fund [in an owned Account] to another \[any "Active" Account\])
+
+##### Currency (linkable entity)
+
+Purpose
+
+* represents Government Sovereign Currency used as Legal Tender
+
+Associated Smart Contracts
+
+* Register Currency (linked to a Sovereign Entity)
+* De-register Currency (linked to a Sovereign Entity)
 
 ##### Central Bank (controlling entity)
+
+Purpose
+
+* to Create and Retire Currencies (GSCs)
+* to Create and Close Accounts
+* to Set the LXR [to GSC]
+* to Create and Destroy BCT (using GSC at the prevailing LXR)
 
 Functionality required
 
 * must be able to Register and De-register as a Central Bank
-* must be able to Create and Close Accounts (as requested by another party)
-* must be able to Create and Destroy BTC (using LCG at the prevailing LXR, as requested by the linked Sovereign Entity)
+* must be able to Create and Close Accounts - _as requested by another party_
+* must be able to Create and Destroy BCT - _as requested by the linked Sovereign Entity_
+* must be able to Set [and Adjust] the LXR [to the GSC] (as used by the linked Sovereign Entity)
 
 Associated Smart Contracts
 
-* Register as a Central Bank (linked to a Sovereign Entity)
+* Register as a Central Bank (linked to a single Sovereign Entity) - _setting the GSC and initial LXR_
 * De-register as a Central Bank (must not have any "Active" accounts)
-* Create BTC (as requested by a Sovereign Entity)
-* Destroy BTC (as requested by a Sovereign Entity)
+* Adjust the LXR [to the GSC] (must not be zero)
+* Create BCT (at the prevailing LXR) - as requested by a Sovereign Entity
+* Destroy BCT - as requested by a Sovereign Entity
 
 ##### Agent (participating entity)
 
@@ -52,7 +87,7 @@ Functionality required
 * must be able to Register and De-register as an Agent
 * must be able to Request the Opening and Closing of Accounts
 * must be able to Open and Close Funds (within an Account)
-* must be able to Request Trustcoins (into a single, specified Fund) - to be fullfilled by another party
+* must be able to Request Trustcoins (into a single, specified Fund) - to be fullfilled by another participant
 * must be able to Register and De-register Locations
 * must be able to Transfer Containers between Locations
 
@@ -167,9 +202,9 @@ Associated Smart Contracts
 
 #### _Key_
 
-* _BTC - Blockchain Charitable Trustcoin_
+* _BCT - Blockchain Charitable Trustcoin_
 * _GCB - Government Central Bank_
 * _GSC - Government's Soverign Currency [as used locally for Legal Tender]_
-* _LXR - Local exchange rate [i.e. the amount of GSC that is equivalent to a single BTC]_
+* _LXR - Local exchange rate [i.e. the amount of GSC that is equivalent to a single BCT]_
 
-### Develop website to enable tracking of BTC lifecycle and Asset transfer across a distributed public ledger
+### Develop website to enable tracking of BCT lifecycle and Asset transfer across a distributed public ledger

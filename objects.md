@@ -4,7 +4,7 @@ The primary objective of "The Blockchain Charitable Trust" is to increase the fl
 
 ## [Phase One](phase-one.md)
 
-* Create a new virtual currency "BCT" (Blockchain Charitable Trustcoin) used exclusively by governments for charitable causes, such as international humanitarian aid
+* Create a suite of Smart Contracts in a new virtual currency "BCT" (Blockchain Charitable Trustcoin) used exclusively by governments for charitable causes, such as international humanitarian aid
 	
 * Develop website to enable tracking of BTC lifecycle across distributed public ledger
 

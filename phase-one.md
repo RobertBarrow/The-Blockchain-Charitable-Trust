@@ -83,7 +83,7 @@ Smart Contracts would use BUIs to:
 
 #### Associated Smart Contracts
 
-##### Register Sovereign (*name*)
+##### [Register Sovereign](smart-contracts/register-sovereign.md) (*name*)
 
 Must supply
   

@@ -1,18 +1,21 @@
 # Phase 1
 
-## Create "Blockchain Charitable Trustcoin" (virtual currency) and a suite of "Smart Contracts" to be used by various "Entities"
+## Objective
+
+Create "Blockchain Charitable Trustcoin" (virtual currency) and a suite of "Smart Contracts" to be used by various "Entities"
+
 _Note: initially these will be used by governments, banks and agents for charitable causes, such as international humanitarian aid_
 
-Requirements:
+## Requirements
 
 ### Blockchain Charitable Trustcoin ("BCT") 
 
-Purpose:
+#### Purpose
 
 * virtual currency used exlusively on a decentralised public ledger
 * to hold value across international borders
 
-Usage:
+#### Usage
 
 * BCT would be a virtual currency on decentralised public ledger, meaning that no sovereign entity has overall control (i.e. no GCB)
 * Non-fungible nature of a BCTs would give an unprecidented transparency to the use of charitable donations and international aid
@@ -23,9 +26,11 @@ Usage:
 
 ### Blockchain Unique Identifier ("BUI") 
 
-Purpose:
+#### Purpose
 
 * unique identifiers allocated to entries created on a decentralised public ledger
+
+#### Usage 
 
 Smart Contracts would use BUIs to:
 
@@ -35,14 +40,17 @@ Smart Contracts would use BUIs to:
 
 ### Entities and Smart Contracts 
 
-Purpose 
+#### Purpose 
 
-* to record BCT and Assets held by participants
+* to store records of BCT and Assets currently held by participants
+
+#### Usage
+
 * to track movement of BCT and Assets between participants e.g. across international borders
  
-#### Sovereign (controlling entity)
+### Sovereign (controlling entity)
 
-Purpose:
+#### Purpose
 
 * to create and control Territories 
 * to request and control Currencies that are used as Legal Tender \[in territories that it owns / controls\]
@@ -51,7 +59,7 @@ Purpose:
 * to be distribute BCT for charitable causes and international aid
 * to register and control Ports that can be used for the safe transfer of Assets
 
-Functionality required:
+#### Functionality required
 
 * must be able to Register and De-register as a Sovereign Entity
 * must be able to Register and De-register Locations
@@ -63,100 +71,100 @@ Functionality required:
 * must be able to Deposit and Withdraw Assets from Containers
 * must be able to Transfer Trustcoins between Funds (source must belong to own account, but destination can be any account)
 
-Mandatory attributes:
+#### Mandatory attributes
 
 * blockchain unique identifier (_BUI_)
 * unique name
 
-Optional attributes:
+#### Optional attributes
 
 * location (_BUI linked to an active Location_)
 * central bank (_BUI linked to an active Central Bank_)
 
-Associated Smart Contracts:
+#### Associated Smart Contracts
 
-* Register Sovereign (_name_) 
+##### Register Sovereign (*name*)
 
-  _Must supply:_
+Must supply
   
-    1. a unique name for this Sovereign entity
+* a unique name for this Sovereign entity
   
-  _Notes:_
+Notes
   
-    1. this registration must be approved by The Blockchain Charitable Trust
+1. this registration must be approved by The Blockchain Charitable Trust
 
-* De-register Sovereign (_BUI_)
+##### De-register Sovereign (*BUI*)
 
-  _Must supply:_
+Must supply
   
-    1. the BUI of an active Sovereign entity (_self_)
+* the BUI of an active Sovereign entity (*self*)
   
-  _Notes:_ 
+Notes
   
-    1. a Sovereign entity can only be de-registered by itself
-    1. a Sovereign entity can only be de-registered if it holds no BCT or other Assets
+1. a Sovereign entity can only be de-registered by itself
+2. a Sovereign entity can only be de-registered if it holds no BCT or other Assets
 
-* Request Currency (_name_) 
+##### Request Currency (*name*)
 
-  _Supply:_
+  Must supply
   
-    1. a unique name for the requested Currency \[GSC\]
+* a unique name for the requested Currency
   
-  _Notes:_
+  Notes
   
-    1. this request can only be fullfilled by the Central Bank that has been linked to this Sovereign entity
+1. this request can only be fullfilled by the Central Bank that has been linked to this Sovereign entity
 
-* Request Currency Retirement (_BUI_)
+##### Request Currency Retirement (*BUI*)
 
-  _Supply:_
+  Must supply
   
-    1. BUI of an active Currency \[that is to be retired\]
+* BUI of an active Currency (that is to be retired)
   
-  _Notes:_
+  Notes
   
-    1. the Currency must be one that is owned by the Sovereign entity submitting the request;
-    2. this request can only fullfilled by the Central Bank that is linked to the Sovereign entity_
+1. the Currency must be one that is owned by the Sovereign entity submitting the request;
+2. this request can only fullfilled by the Central Bank that is linked to the Sovereign entity
 
-* Request Account (_name_) 
+##### Request Account (*name*)
 
-  _Supply:_
+  Must supply
   
-    1. a unique name for the requested Account
+* a unique name for the requested Account
 
-  _Notes:_
+  Notes
   
-    1. this request can only be fullfilled by the Central Bank that is linked to the Sovereign entity_
+1. this request can only be fullfilled by the Central Bank that is linked to the Sovereign entity
 
-* Request Account Closure (_BUI_)
+##### Request Account Closure (*BUI*)
 
-  _Must supply:_
+  Must supply
   
-    1. the BUI of an empty Account \[that is to be closed / made inactive\]
+* the BUI of an empty Account \[that is to be closed / made inactive\]
     
-  _Notes:_
+  Notes
   
-    1. the Account must be owned by this Sovereign entity_
-    2. the Account balance must be zero
+1. the Account must be owned by this Sovereign entity_
+2. the Account balance must be zero
 
-* Open Account Fund (_name, BUI_)
+##### Open Account Fund (*name, BUI*)
 
-  _Must supply:_
+  Must supply
   
-    1. a unique name for the Fund and the BUI of an active Account
+*   a unique name for the Fund and the BUI of an active Account
  
-  _Notes:_
+  Notes
  
-    1. the Account must be owned by the Sovereign entity that is opening the Fund
+1. the Account must be owned by the Sovereign entity that is opening the Fund
     
-* Close Account Fund (BUI)
+##### Close Account Fund (BUI)
 
-  _Must supply:_
+  Must supply
  
-    1. the BUI of an empty fund
+1. the BUI of an empty fund
 
-  _Notes:_
+  Notes
  
-    1. the Fund must belong to an Account that is owned by the Sovereign entity that is closing the Fund
+1. the Fund must belong to an Account that is owned by the Sovereign entity that is closing the Fund
 
 # WIP
 

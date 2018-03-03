@@ -6,4 +6,4 @@
   
 #### Notes
   
-1. this request can only be fullfilled by the Central Bank that has been linked to this Sovereign entity
+1. the Currency can only be created by the Central Bank that has been linked to the entity that is submitting the request

@@ -38,7 +38,7 @@ Smart Contracts would use BUIs to:
 * record current ownership of assets 
 * record current location of assets
 
-### Entities and Smart Contracts 
+### Entities and associated Smart Contracts 
 
 #### Purpose 
 

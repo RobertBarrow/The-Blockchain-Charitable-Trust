@@ -1,4 +1,4 @@
-# De-register Sovereign (*BUI*)
+# De-register Sovereign (*entity BUI*)
 
 ### Must supply
   
@@ -7,4 +7,4 @@
 #### Notes
   
 1. a Sovereign entity can only be de-registered by itself
-2. a Sovereign entity can only be de-registered if it holds no BCT or other Assets
+2. a Sovereign entity can only be de-registered if it holds no active Accounts or Containers

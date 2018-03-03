@@ -8,151 +8,21 @@ _Note: initially these will be used by governments, banks and agents for charita
 
 ## Requirements
 
-### Blockchain Charitable Trustcoin ("BCT") 
+* [Blockchain Charitable Trustcoin ("BCT")](blockchain-charitable-trustcoin.md)
 
-#### Purpose
+* [Blockchain Unique Identifier ("BUI")](blockchain-unique-identifier.md)
 
-* virtual currency used exlusively on a decentralised public ledger
-* to hold value across international borders
 
-#### Usage
-
-* BCT would be a virtual currency on decentralised public ledger, meaning that no sovereign entity has overall control (i.e. no GCB)
-* Non-fungible nature of a BCTs would give an unprecidented transparency to the use of charitable donations and international aid
-* LXRs could be controlled by each GCB and reviewed periodically; this would be akin to them setting their GSC's base interest rate
-* GCBs could lower the LXR to encourage charitable donations to be made in their territories 
-* GCBs could raise the LXR to encourage foreign aid to be sent to their territories
-* GCBs could hold a reserve of BCT in the ledger, in the same way that they might hold a reserve of physical assets (e.g. gold)
-
-### Blockchain Unique Identifier ("BUI") 
-
-#### Purpose
-
-* unique identifiers allocated to entries created on a decentralised public ledger
-
-#### Usage 
-
-Smart Contracts would use BUIs to:
-
-* associate entities with one another (linking)
-* record current ownership of assets 
-* record current location of assets
-
-### Entities and associated Smart Contracts 
+### Smart Contracts 
 
 #### Purpose 
 
-* to store records of BCT and Assets currently held by participants
-
-#### Usage
-
+* to record BCT and Assets currently held by participants
 * to track movement of BCT and Assets between participants e.g. across international borders
- 
-### Sovereign (controlling entity)
 
-#### Purpose
+### Entities
 
-* to create and control Territories 
-* to request and control Currencies that are used as Legal Tender \[in territories that it owns / controls\]
-* to request and control Accounts
-* to create and control Funds of BCT held in Accounts \[that it controls\]
-* to be distribute BCT for charitable causes and international aid
-* to register and control Ports that can be used for the safe transfer of Assets
-
-#### Functionality required
-
-* must be able to Register and De-register as a Sovereign Entity
-* must be able to Register and De-register Locations
-* must be able to Request Currencies be Opened and Closed (GSCs)
-* must be able to Request Accounts be Opened and Closed 
-* must be able to Open and Close Funds and Ports
-* must be able to Request Trustcoins (into a single, specified Fund) - to be fullfilled by a Central Bank, or other participant)
-* must be able to Deposit and Withdraw Trustcoins from Funds
-* must be able to Deposit and Withdraw Assets from Containers
-* must be able to Transfer Trustcoins between Funds (source must belong to own account, but destination can be any account)
-
-#### Mandatory attributes
-
-* blockchain unique identifier (_BUI_)
-* unique name
-
-#### Optional attributes
-
-* location (_BUI linked to an active Location_)
-* central bank (_BUI linked to an active Central Bank_)
-
-#### Associated Smart Contracts
-
-* [Register Sovereign](smart-contracts/register-sovereign.md)
-* [De-register Sovereign](smart-contracts/deregister-sovereign.md)
-* [Request Currency](smart-contracts/request-currency.md)
-
-##### Request Currency Retirement (*BUI*)
-
-  Must supply
-  
-* BUI of an active Currency (that is to be retired)
-  
-  Notes
-  
-1. the Currency must be one that is owned by the Sovereign entity submitting the request;
-2. this request can only fullfilled by the Central Bank that is linked to the Sovereign entity
-
-##### Request Account (*name*)
-
-  Must supply
-  
-* a unique name for the requested Account
-
-  Notes
-  
-1. this request can only be fullfilled by the Central Bank that is linked to the Sovereign entity
-
-##### Request Account Closure (*BUI*)
-
-  Must supply
-  
-* the BUI of an empty Account \[that is to be closed / made inactive\]
-    
-  Notes
-  
-1. the Account must be owned by this Sovereign entity_
-2. the Account balance must be zero
-
-##### Open Account Fund (*name, BUI*)
-
-  Must supply
-  
-*   a unique name for the Fund and the BUI of an active Account
- 
-  Notes
- 
-1. the Account must be owned by the Sovereign entity that is opening the Fund
-    
-##### Close Account Fund (BUI)
-
-  Must supply
- 
-1. the BUI of an empty fund
-
-  Notes
- 
-1. the Fund must belong to an Account that is owned by the Sovereign entity that is closing the Fund
-
-# WIP
-
-* Request Fund Deposit (amount, BUI) - _supply amount of BCT to be created and the BUI of a Fund \[owned by Sovereign entity\] - _request can only be fullfilled by a Central Bank linked to the Sovereign entity_
-* Request Fund Withdrawal (amount, BUI) - _supply amount of BCT to withdrawn \[destroyed\] and the BUI of a Fund_
-  _Notes: 
-    Fund must be owned by this Sovereign entity;
-    request can only be fullfilled by a Central Bank linked to the Sovereign entity_
-
-* Own Account Transfer (BUI, amount, BUI) - _supply BUI of source Fund \[in an Account owned by Sovereign entity\], amount of BCT to transfer, BUI of destination Fund \[in an Account owned by Sovereign entity\]
-
-* Request External Transfer (BUI, amount, BUI) - _supply BUI of source Fund \[in an Account owned by Sovereign entity\], amount of BCT to transfer, BUI of destination Fund \[held in an "Active" Account of any participant\] - request can only be fullfilled by a Central Bank linked to the Sovereign entity_
-
-* Register location (name, BUI) - _BUI linked to a single Port or Soverign entity_
-* Update Location (link to another Port)
+* [Sovereign](/entities/sovereign.md)
 
 #### Territory (controllable entity)
 

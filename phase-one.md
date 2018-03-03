@@ -85,16 +85,7 @@ Smart Contracts would use BUIs to:
 
 * [Register Sovereign](smart-contracts/register-sovereign.md)
 * [De-register Sovereign](smart-contracts/deregister-sovereign.md)
-
-##### Request Currency (*name*)
-
-  Must supply
-  
-* a unique name for the requested Currency
-  
-  Notes
-  
-1. this request can only be fullfilled by the Central Bank that has been linked to this Sovereign entity
+* [Request Currency](smart-contracts/request-currency.md)
 
 ##### Request Currency Retirement (*BUI*)
 
